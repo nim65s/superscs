@@ -29,6 +29,7 @@
 #ifndef UNITTESTS_H
 #define UNITTESTS_H
 
+#include <stbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -39,23 +40,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#ifdef bool
-#undef bool
-#endif
-
-#ifdef true
-#undef true
-#endif
-
-#ifdef false
-#undef false
-#endif
-
-    typedef int bool;
-#define true 1
-#define false 0
-
 
     int number_of_assertions;
 
